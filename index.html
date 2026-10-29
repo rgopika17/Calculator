@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc" aria-label="Calculator">
+    <div class="top">
+      <div class="grille" aria-hidden="true"></div><span class="brand">Calculator</span>
+    </div>
+
+    <div class="display" aria-live="polite">
+      <div class="expr" id="expr"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <div class="keys" id="keys">
+      <button class="key clear" data-action="clear">C</button>
+      <button class="key fn" data-action="delete" aria-label="Backspace">&#9003;</button>
+      <button class="key op" data-op="÷" aria-label="Divide">&divide;</button>
+      <button class="key op" data-op="×" aria-label="Multiply">&times;</button>
+
+      <button class="key" data-num="7">7</button>
+      <button class="key" data-num="8">8</button>
+      <button class="key" data-num="9">9</button>
+      <button class="key op" data-op="-" aria-label="Subtract">&minus;</button>
+
+      <button class="key" data-num="4">4</button>
+      <button class="key" data-num="5">5</button>
+      <button class="key" data-num="6">6</button>
+      <button class="key op" data-op="+" aria-label="Add">+</button>
+
+      <button class="key" data-num="1">1</button>
+      <button class="key" data-num="2">2</button>
+      <button class="key" data-num="3">3</button>
+      <button class="key equals" data-action="equals">=</button>
+
+      <button class="key zero" data-num="0">0</button>
+      <button class="key" data-action="dot">.</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
